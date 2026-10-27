@@ -210,4 +210,8 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="violet", secondary_hue="cyan"))
             app.load(predict, [r_in, g_in, s_in], [gauge, verdict])
 
 import os
-app.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
+app.launch(
+    server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", 7860)),
+    footer_links=[],          # hides Runs, Use via API, Built with Gradio and Settings
+)
