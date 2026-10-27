@@ -1,5 +1,8 @@
-gradio
-plotly
+streamlit
 pandas
 numpy
+plotly
 scikit-learn
+lxml
+html5lib
+beautifulsoup4
